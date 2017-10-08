@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="calibri.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingSinTitleCell" rowHeight="40" id="KGk-i7-Jjw" customClass="SettingSinTitleCell" customModule="mxcircuit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLc-0Y-P6g">
+                        <rect key="frame" x="16" y="10" width="8" height="31"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="Qze-LB-9Kz"/>
+                            <constraint firstAttribute="height" constant="31" id="ZOI-fM-7mt"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moxo MX escalona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOn-NK-ZAJ">
+                        <rect key="frame" x="32" y="15" width="182" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="182" id="JKu-2c-S92"/>
+                            <constraint firstAttribute="height" constant="21" id="cFg-vH-TIc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uvc-N1-aTt">
+                        <rect key="frame" x="255" y="10" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="XMA-jh-O0T"/>
+                            <constraint firstAttribute="width" constant="49" id="sOA-iy-DHP"/>
+                        </constraints>
+                        <connections>
+                            <action selector="goSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Bnd-SC-eiG"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oOn-NK-ZAJ" firstAttribute="leading" secondItem="hLc-0Y-P6g" secondAttribute="trailing" constant="8" id="Req-HL-WE6"/>
+                    <constraint firstItem="hLc-0Y-P6g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="SVV-Wq-pMh"/>
+                    <constraint firstItem="oOn-NK-ZAJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Y6w-fK-HDC"/>
+                    <constraint firstItem="uvc-N1-aTt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="czq-gX-fmh"/>
+                    <constraint firstAttribute="trailing" secondItem="uvc-N1-aTt" secondAttribute="trailing" constant="16" id="g7q-JQ-1K6"/>
+                    <constraint firstItem="hLc-0Y-P6g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yXD-QP-ZO1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="oOn-NK-ZAJ" id="Zac-LU-nhF"/>
+                <outlet property="switch_" destination="uvc-N1-aTt" id="T9U-lx-7wj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

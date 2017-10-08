@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="calibri.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="CircuitCell" customModule="mxcircuit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ai9-lq-W9m">
+                        <rect key="frame" x="28" y="0.0" width="232" height="39"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Martín de la Vega" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47O-Fn-toT">
+                                <rect key="frame" x="8" y="4" width="173" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="XLf-xW-mgQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="47O-Fn-toT" firstAttribute="top" secondItem="ai9-lq-W9m" secondAttribute="top" constant="4" id="9C7-d8-lhB"/>
+                            <constraint firstAttribute="bottom" secondItem="47O-Fn-toT" secondAttribute="bottom" constant="4" id="9eb-lL-H6K"/>
+                            <constraint firstItem="47O-Fn-toT" firstAttribute="leading" secondItem="ai9-lq-W9m" secondAttribute="leading" constant="8" id="Rpm-du-5gx"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M38-Tb-AOo">
+                        <rect key="frame" x="20" y="0.0" width="8" height="39"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="w02-8Q-oKs"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36,5 km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8i-nf-lhl">
+                        <rect key="frame" x="170" y="5" width="83" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="xs4-07-nb1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="E8i-nf-lhl" secondAttribute="trailing" constant="27" id="8RR-fl-H1G"/>
+                    <constraint firstItem="M38-Tb-AOo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gs3-ah-6Ir"/>
+                    <constraint firstItem="ai9-lq-W9m" firstAttribute="leading" secondItem="M38-Tb-AOo" secondAttribute="trailing" id="Jj2-ZP-M2m"/>
+                    <constraint firstAttribute="bottom" secondItem="M38-Tb-AOo" secondAttribute="bottom" constant="5" id="Krq-Bj-glT"/>
+                    <constraint firstItem="E8i-nf-lhl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="R6x-aX-mhW"/>
+                    <constraint firstAttribute="trailing" secondItem="ai9-lq-W9m" secondAttribute="trailing" constant="20" id="WdL-g9-CH0"/>
+                    <constraint firstItem="ai9-lq-W9m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iqO-Mk-T6g"/>
+                    <constraint firstItem="M38-Tb-AOo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="mbw-NH-6mt"/>
+                    <constraint firstAttribute="bottom" secondItem="ai9-lq-W9m" secondAttribute="bottom" constant="5" id="riK-Oh-z3k"/>
+                    <constraint firstAttribute="bottom" secondItem="E8i-nf-lhl" secondAttribute="bottom" constant="8.5" id="twC-zf-5fO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="kmsCircuit" destination="E8i-nf-lhl" id="lqX-R3-PGK"/>
+                <outlet property="nameCircuit" destination="47O-Fn-toT" id="lR4-Fh-5gE"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="56.5"/>
+        </tableViewCell>
+    </objects>
+</document>

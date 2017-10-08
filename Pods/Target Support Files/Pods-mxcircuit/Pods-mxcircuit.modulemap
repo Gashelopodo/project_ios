@@ -1,0 +1,6 @@
+framework module Pods_mxcircuit {
+  umbrella header "Pods-mxcircuit-umbrella.h"
+
+  export *
+  module * { export * }
+}

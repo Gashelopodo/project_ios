@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="calibri.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+        <array key="calibri_italic.ttf">
+            <string>Calibri-Italic</string>
+        </array>
+        <array key="calibri_regular.ttf">
+            <string>Calibri</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="NotificationCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="132" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="mxcircuit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="131.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhZ-ZR-IM0">
+                        <rect key="frame" x="20" y="0.0" width="8" height="126.5"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="7hb-BA-GcA"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MXcircuit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7o-DH-rHj">
+                        <rect key="frame" x="33" y="1" width="274" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ik1-96-74X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acabamos de superar la barrera de los 2100 usuarios, GRACIAS Y mucho GASS!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXc-at-BcO">
+                        <rect key="frame" x="33" y="25" width="267" height="74"/>
+                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="17"/>
+                        <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="2017-08-21 15:33:18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0X-ow-hWF">
+                        <rect key="frame" x="33" y="107.5" width="267" height="15"/>
+                        <fontDescription key="fontDescription" name="Calibri-Italic" family="Calibri" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gXc-at-BcO" firstAttribute="leading" secondItem="GhZ-ZR-IM0" secondAttribute="trailing" constant="5" id="3bP-ou-v1D"/>
+                    <constraint firstItem="gXc-at-BcO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="3q6-bE-uho"/>
+                    <constraint firstItem="GhZ-ZR-IM0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4D6-2B-MPF"/>
+                    <constraint firstAttribute="trailing" secondItem="gXc-at-BcO" secondAttribute="trailing" constant="20" id="BMx-eT-JvF"/>
+                    <constraint firstAttribute="trailing" secondItem="M0X-ow-hWF" secondAttribute="trailing" constant="20" id="BfW-gP-9Cq"/>
+                    <constraint firstItem="M0X-ow-hWF" firstAttribute="top" secondItem="gXc-at-BcO" secondAttribute="bottom" constant="8.5" id="E3e-b4-xmP"/>
+                    <constraint firstItem="M0X-ow-hWF" firstAttribute="leading" secondItem="GhZ-ZR-IM0" secondAttribute="trailing" constant="5" id="HIq-i7-pTJ"/>
+                    <constraint firstAttribute="bottom" secondItem="M0X-ow-hWF" secondAttribute="bottom" constant="9" id="Odl-gB-E7N"/>
+                    <constraint firstItem="u7o-DH-rHj" firstAttribute="leading" secondItem="GhZ-ZR-IM0" secondAttribute="trailing" constant="5" id="X5T-yd-vqd"/>
+                    <constraint firstItem="M0X-ow-hWF" firstAttribute="top" secondItem="gXc-at-BcO" secondAttribute="bottom" constant="8.5" id="a5s-EE-1g3"/>
+                    <constraint firstItem="GhZ-ZR-IM0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cJz-fg-5cS"/>
+                    <constraint firstItem="u7o-DH-rHj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="d2R-MA-HDW"/>
+                    <constraint firstAttribute="trailing" secondItem="u7o-DH-rHj" secondAttribute="trailing" constant="13" id="lai-V5-NIG"/>
+                    <constraint firstAttribute="bottom" secondItem="GhZ-ZR-IM0" secondAttribute="bottom" constant="5" id="uQs-GI-qqP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateNotification" destination="M0X-ow-hWF" id="g9F-xD-8yR"/>
+                <outlet property="descriptionNotification" destination="gXc-at-BcO" id="xb6-ft-8qZ"/>
+                <outlet property="titleCircuit" destination="u7o-DH-rHj" id="Wi5-Ys-pb9"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="104"/>
+        </tableViewCell>
+    </objects>
+</document>
